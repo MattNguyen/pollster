@@ -1,0 +1,5 @@
+%h3 Send your viewers this link:
+= link_to poll_url(poll.id), poll_url(poll.id)
+
+%h3 Edit your poll here:
+= link_to "#{root_url}#{poll.edit_url}", edit_poll_path(poll.id)
